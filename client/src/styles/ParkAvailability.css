@@ -1,0 +1,128 @@
+.availability-search-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+  .availability-search-container {
+    flex-direction: column; /* Change flex direction to vertical */
+  }
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed; /* Position fixed relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the top-left corner to the exact center */
+  background-color: white; /* Background color of the modal */
+  padding: 20px; /* Internal padding for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  width: 50%; /* Takes up 50% of the screen width */
+  max-width: 600px; /* Optional: Maximum width to avoid stretching on large screens */
+  min-width: 300px; /* Optional: Minimum width to avoid collapsing on small screens */
+  z-index: 10; /* Higher than overlay to ensure it appears on top */
+}
+
+.close-modal-icon-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.close-modal-icon {
+  color: black;
+}
+
+.modal-header {
+  margin: 15px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.booking-details-category {
+  margin: 5px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+.booking-details-text {
+  margin: 5px;
+  color: black;
+  text-decoration: none;
+  text-align: right;
+}
+
+.booking-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.booking-details-category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+}
+
+.booking-details-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  text-align: right;
+}
+
+.confirm-booking-button {
+  margin: 15px;
+  padding: 20px;
+  background-color: #1aaf4b;
+  color: white;
+  border: none;
+  font-size: 1.25em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-booking-button:disabled {
+  background-color: #024f1c;
+  cursor: not-allowed;
+}
+
+.confirm-booking-button:hover:enabled {
+  background-color: #0603b1;
+}
+
+.cancel-booking-button {
+  margin: 15px;
+  padding: 10px;
+  background-color: #ff0000bc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancel-booking-button:hover {
+  background-color: #ff0000;
+}
+
+.booking-helper-text {
+  margin: 15px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}

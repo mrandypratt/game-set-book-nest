@@ -1,0 +1,12 @@
+.booking-details-table-header {
+  font-size: 1.75rem;
+  padding-bottom: 15px;
+}
+
+.booking-details-table-data-title {
+  width: 100px;
+}
+
+.booking-details-table-data-info {
+  text-align: center;
+}
