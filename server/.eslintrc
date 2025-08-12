@@ -1,0 +1,17 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "rules": {
+    "@typescript-eslint/no-floating-promises": ["error", { "ignoreVoid": true }],
+    "no-prototype-builtins": "off",
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+  },
+}
