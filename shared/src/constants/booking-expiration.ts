@@ -1,0 +1,1 @@
+export const BOOKING_EXPIRATION_MINUTES = 10;
