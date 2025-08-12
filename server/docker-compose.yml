@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  game-set-book-pg:
+    container_name: game-set-book-pg
+    image: postgres:17
+    environment:
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+      POSTGRES_USER: ${PGUSER}
+      POSTGRES_DB: ${PGDATABASE}
+      PG_DATA: /var/lib/postgresql/data
+    ports:
+      - ${PGPORT}:5432
+    volumes:
+      - game-set-book-pgdata:/var/lib/postgresql/data
+
+volumes:
+  game-set-book-pgdata:
